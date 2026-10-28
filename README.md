@@ -1,6 +1,6 @@
-# GoldKompass
+![GoldKompass](docs/banner.png)
 
-[English](#english) · [Deutsch](#deutsch)
+[English](#english) · [Deutsch](#deutsch) · [Screenshots](#screenshots)
 
 World of Warcraft Retail addon (Midnight 12.x) · Author: Rottgar · CurseForge project 1768724
 
@@ -143,3 +143,21 @@ Auctionator oder TradeSkillMaster (Preise), Routes (Farm-Routen), Titan Panel/El
 
 ### Installation
 Den Ordner `GoldKompass` nach `World of Warcraft/_retail_/Interface/AddOns` kopieren oder über die CurseForge-App installieren.
+
+---
+
+## Screenshots
+
+![Overview](docs/overview.jpg)
+
+![Overview and analysis](docs/analysis.jpg)
+
+![Farm](docs/farm.jpg)
+
+![Routes](docs/routes.jpg)
+
+![Savings goals](docs/goals.jpg)
+
+![Sell helper](docs/sellhelper.jpg)
+
+![In game](docs/ingame.jpg)
