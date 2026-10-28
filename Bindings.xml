@@ -1,0 +1,11 @@
+<Bindings>
+	<Binding name="GOLDKOMPASS_TOGGLE" header="GOLDKOMPASS" category="ADDONS">
+		GoldKompass.Toggle()
+	</Binding>
+	<Binding name="GOLDKOMPASS_FARM" category="ADDONS">
+		GoldKompass.ToggleFarm()
+	</Binding>
+	<Binding name="GOLDKOMPASS_PAUSE" category="ADDONS">
+		if GoldKompass.FarmPause then GoldKompass.FarmPause() end
+	</Binding>
+</Bindings>

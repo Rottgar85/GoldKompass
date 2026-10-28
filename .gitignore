@@ -1,0 +1,4 @@
+# Nicht ins Repository
+*.zip
+.DS_Store
+Thumbs.db
