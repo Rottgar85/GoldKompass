@@ -1,5 +1,15 @@
 # GoldKompass Changelog
 
+## 0.26.1
+
+**English**
+- Overview: the weekly goal tile no longer covers the word "Week" with the amount
+- Sidebar: the non-working Options button was removed (settings: Settings button or Esc > Options > AddOns)
+
+**Deutsch**
+- Übersicht: In der Kachel Wochenziel verdeckt der Betrag nicht mehr das Wort „Woche“
+- Seitenleiste: Der nicht funktionierende Knopf Optionen wurde entfernt (Einstellungen: Knopf Einstellungen oder Esc > Optionen > AddOns)
+
 ## 0.26.0
 
 **English**

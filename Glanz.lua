@@ -116,6 +116,11 @@ local function UpdateTiles(f, show)
     end
     -- 3. Wochenziel mit Balken
     local t3, goal = f.tiles[3], db.weekGoal
+    -- Betrag "13.114 / 100.000" ist zu lang fuer die Kopfzeile neben "Woche": in die Zeile der Prozentzahl, rechts
+    if not t3.gkSubMoved then
+        t3.gkSubMoved = true
+        t3.sub:ClearAllPoints(); t3.sub:SetPoint("RIGHT", t3, "TOPRIGHT", -6, -30)
+    end
     if goal and goal > 0 and GK.LiveWeek then
         local net = GK.LiveWeek()
         local pct = net / (goal * 10000)
