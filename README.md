@@ -150,14 +150,18 @@ Den Ordner `GoldKompass` nach `World of Warcraft/_retail_/Interface/AddOns` kopi
 
 ![Overview](docs/overview.jpg)
 
-![Overview and analysis](docs/analysis.jpg)
+![Week](docs/week.jpg)
 
 ![Farm](docs/farm.jpg)
 
-![Routes](docs/routes.jpg)
+![Loot](docs/loot.jpg)
 
-![Savings goals](docs/goals.jpg)
+![Characters](docs/characters.jpg)
+
+![Overview and analysis](docs/analysis.jpg)
 
 ![Sell helper](docs/sellhelper.jpg)
+
+![Settings](docs/settings.jpg)
 
 ![In game](docs/ingame.jpg)
