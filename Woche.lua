@@ -436,7 +436,8 @@ ev2:SetScript("OnEvent", function(_, event)
         if o.barLock == nil then o.barLock = false end
         if o.autoRepair == nil then o.autoRepair = true end
         GK.UpdateBar()
-        C_Timer.NewTicker(2, GK.UpdateBar)
+        -- eigene Lua-Funktion uebergeben: GK.UpdateBar ist per hooksecurefunc umhuellt, das nimmt NewTicker nicht an
+        C_Timer.NewTicker(2, function() GK.UpdateBar() end)
     else
         SnapRepair()
     end
