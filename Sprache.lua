@@ -90,6 +90,10 @@ local X = {
     ["ALLE Daten aus der Sicherung übernehmen."] = "Import ALL data from the backup.",
     ["Selbsttest läuft ..."] = "Self-test running ...",
     ["Fenster gesperrt."] = "Window locked.", ["Fenster verschiebbar."] = "Window movable.",
+    ["gesperrt."] = "locked.", ["verschiebbar."] = "movable.", ["Fenster mit Seitenleiste"] = "Window with sidebar",
+    ["Willkommensseite"] = "Welcome page", ["Export"] = "Export", ["Farm-Fenster"] = "Farm window",
+    ["Gesperrt. Klick: verschiebbar machen"] = "Locked. Click: make movable",
+    ["Verschiebbar. Klick: an dieser Stelle sperren"] = "Movable. Click: lock in place",
     ["geladen. /gk Fenster, /gk optionen, /gk start, /gk stop, /gk befehle."] = "loaded. /gk window, /gk options, /gk start, /gk stop, /gk commands.",
     -- Hilfetexte der Befehle (/gk befehle und Einstellungsseite)
     ["Farm-Session starten (optional mit Name)"] = "Start a farm session (optional name)",

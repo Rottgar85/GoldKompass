@@ -84,8 +84,9 @@ nav:Hide()
 tinsert(UISpecialFrames, "GoldKompassNav")
 GK.nav = nav
 
+-- Ob gesperrt ist, entscheidet Sperre.lua (jedes Fenster einzeln) vor diesem Aufruf
 local function StartMove()
-    if not Opt().lockWindow then nav:StartMoving() end
+    nav:StartMoving()
 end
 local function StopMove()
     nav:StopMovingOrSizing()
@@ -242,7 +243,7 @@ local function Attach(key)
     f:HookScript("OnHide", function() Hidden(key) end)
     -- Ziehen an der Seite verschiebt im Ein-Fenster-Modus die ganze Einheit
     f:SetScript("OnDragStart", function(self)
-        if On() then StartMove() elseif not Opt().lockWindow then self:StartMoving() end
+        if On() then StartMove() else self:StartMoving() end
     end)
     f:SetScript("OnDragStop", function(self)
         if On() then StopMove() else self:StopMovingOrSizing(); SavePos(self, "page_" .. key) end
@@ -327,7 +328,7 @@ end
 local function LockHud(f)
     if not f or f.gkLock then return end
     f.gkLock = true
-    f:SetScript("OnDragStart", function(self) if not Opt().lockHud then self:StartMoving() end end)
+    f:SetScript("OnDragStart", function(self) self:StartMoving() end) -- Sperre: Sperre.lua
 end
 if type(GK.BuildHud) == "function" then
     hooksecurefunc(GK, "BuildHud", function() pcall(LockHud, GK.hud); pcall(GK.ApplyScale) end)
@@ -381,6 +382,7 @@ end, "Fenstergröße: groesse 0.9 oder groesse 110")
 GK.RegisterCommand({ "sperren", "lock" }, function()
     local o = Opt()
     o.lockWindow = not o.lockWindow
+    if GK.ResetLockGroup then GK.ResetLockGroup("lockWindow") end
     print("|cffffd100GoldKompass|r: Fenster " .. (o.lockWindow and "gesperrt." or "verschiebbar."))
 end, "Fensterposition sperren/entsperren")
 

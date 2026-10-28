@@ -1,5 +1,17 @@
 # GoldKompass Changelog
 
+## 0.27.0
+
+**English**
+- Lock every window separately: each window has a small padlock in the bottom left corner (the sidebar has it at the top right). Click it to lock or unlock only that window
+- Works for the overview, all pages (without the sidebar), farm window, group loot, welcome page, backup and export
+- "Lock window" and "Lock farm window" in the settings still lock all windows of their group at once
+
+**Deutsch**
+- Jedes Fenster einzeln sperren: Jedes Fenster hat unten links ein kleines Schloss (die Seitenleiste oben rechts). Ein Klick sperrt oder entsperrt nur dieses Fenster
+- Gilt für Übersicht, alle Seiten (ohne Seitenleiste), Farm-Fenster, Gruppen-Beute, Willkommensseite, Sicherung und Export
+- „Fenster sperren“ und „Farm-Fenster sperren“ in den Einstellungen sperren weiterhin alle Fenster ihrer Gruppe auf einmal
+
 ## 0.26.1
 
 **English**

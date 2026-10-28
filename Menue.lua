@@ -131,8 +131,9 @@ Stepper("Farm-Fenster-Größe", "hudScale", look, 300)
 
 local CHECKS = {
     { "oneWindow", "Ein Fenster mit Seitenleiste", function(on) if GK.SetOneWindow then GK.SetOneWindow(on) end end },
-    { "lockWindow", "Fenster sperren" },
-    { "lockHud", "Farm-Fenster sperren" },
+    -- Sammelschalter: setzt auch die einzeln (per Schloss) gesperrten Fenster dieser Gruppe zurueck
+    { "lockWindow", "Fenster sperren", function() if GK.ResetLockGroup then GK.ResetLockGroup("lockWindow") end end },
+    { "lockHud", "Farm-Fenster sperren", function() if GK.ResetLockGroup then GK.ResetLockGroup("lockHud") end end },
     { "combatHide", "Im Kampf ausblenden" },
 }
 local lastCheck
