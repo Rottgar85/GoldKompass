@@ -4,6 +4,7 @@ package-as: GoldKompass
 ignore:
   - .github
   - VEROEFFENTLICHEN.md
+  - README.md
   - "*.zip"
 
 manual-changelog:

@@ -1,6 +1,13 @@
 # GoldKompass Changelog
 
 ## 0.25.3
+
+**English**
+- The overview always stays open: Routes and goals, Areas and inventory, Analysis, Sell helper and Own route now open to the right of it instead of replacing it. Clicking "Overview" closes the extra page again
+- English: every command has an English name (/gk history, /gk goal, /gk guild on, /gk loot clear, /gk memory clean, /gk design blue …). In English mode the command list, help texts, settings page and chat messages show the English commands; the German commands keep working
+- CurseForge project ID added
+
+**Deutsch**
 - Die Übersicht bleibt immer offen: Routen und Ziele, Gebiete und Inventar, Analyse, Verkaufshelfer und Eigene Route öffnen sich rechts daneben statt sie zu ersetzen. Ein Klick auf „Übersicht“ schließt die Zusatzseite wieder
 - Englisch: alle Befehle haben englische Namen (/gk history, /gk goal, /gk guild on, /gk loot clear, /gk memory clean, /gk design blue …). Befehlsliste, Hilfetexte, Einstellungsseite und Chat-Meldungen zeigen im englischen Modus die englischen Befehle; die deutschen Befehle funktionieren weiterhin
 - CurseForge-Projekt-ID eingetragen
