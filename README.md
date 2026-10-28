@@ -2,7 +2,7 @@
 
 [English](#english) · [Deutsch](#deutsch) · [Screenshots](#screenshots)
 
-World of Warcraft Retail addon (Midnight 12.x) · Author: Rottgar · CurseForge project 1768724
+World of Warcraft addon for Retail (Midnight 12.x), Mists of Pandaria Classic, Burning Crusade Anniversary, Classic Era and WoW Forever · Author: Rottgar · CurseForge project 1768724
 
 ---
 
@@ -58,6 +58,9 @@ World of Warcraft Retail addon (Midnight 12.x) · Author: Rottgar · CurseForge 
 - `/gk backup` backup, `/gk selftest` self-test
 
 German command names keep working in both languages.
+
+### Game versions
+Retail, Mists of Pandaria Classic, Burning Crusade Anniversary, Classic Era and WoW Forever. Features that only exist in Retail, like the warband bank, are skipped in Classic.
 
 ### Optional
 Auctionator or TradeSkillMaster (prices), Routes (farm routes), Titan Panel/ElvUI/Bazooka (bar display)
@@ -128,6 +131,9 @@ Copy the `GoldKompass` folder to `World of Warcraft/_retail_/Interface/AddOns`, 
 - `/gk sicherung` Sicherung, `/gk selbsttest` Selbsttest
 
 Die englischen Befehlsnamen funktionieren in beiden Sprachen.
+
+### Spielversionen
+Retail, Mists of Pandaria Classic, Burning Crusade Anniversary, Classic Era und WoW Forever. Funktionen, die es nur in Retail gibt, etwa die Kriegsmeute-Bank, werden in Classic übersprungen.
 
 ### Optional
 Auctionator oder TradeSkillMaster (Preise), Routes (Farm-Routen), Titan Panel/ElvUI/Bazooka (Leisten-Anzeige)
