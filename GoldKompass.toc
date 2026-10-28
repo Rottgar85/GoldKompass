@@ -3,7 +3,7 @@
 ## Notes: Goldverlauf, Farm-Rechner, Wochenziel, Preisalarm, Gruppen-Farm, Gilden-Wochenziel, Routes-Anbindung, eigene Routen, Gebiete-Vergleich, Schnäppchen-Alarm, Inventar, Verkaufshelfer und Wochenbericht in einem kompakten Fenster. Deutsch und Englisch.
 ## Notes-enUS: Gold tracking, farm calculator, weekly goal, price alarm, group farming, guild weekly goal, Routes support, own routes, area comparison, bargain alarm, inventory, sell helper and weekly report. German and English.
 ## Author: Rottgar
-## Version: 0.25.3
+## Version: 0.26.0
 ## X-Curse-Project-ID: 1768724
 ## IconTexture: Interface\AddOns\GoldKompass\Media\Logo
 ## AddonCompartmentFunc: GoldKompass_OnAddonCompartmentClick

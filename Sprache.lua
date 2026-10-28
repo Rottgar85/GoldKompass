@@ -150,7 +150,7 @@ local X = {
     ["Neuer Rekord: bester Tag!"] = "New record: best day!", ["Neuer Rekord: beste Woche!"] = "New record: best week!",
     ["Neuer Rekord: beste Farm-Stunde!"] = "New record: best farm hour!", ["Wochenziel erreicht!"] = "Weekly goal reached!",
     ["Deine Rekorde"] = "Your records", ["Beste Farm-Stunde"] = "Best farm hour", ["Bester Tag"] = "Best day",
-    ["Beste Woche"] = "Best week", ["Überspringen"] = "Skip", ["Weiter"] = "Next", ["Fertig"] = "Done",
+    ["Beste Woche"] = "Best week", ["Überspringen"] = "Skip", ["Weiter"] = "Next",
     ["Hier ist deine Übersicht: Gold heute, Gold pro Stunde und Wochenziel."] = "This is your overview: gold today, gold per hour and weekly goal.",
     ["Weitere Seiten öffnen sich rechts neben der Übersicht. Ein Klick auf Übersicht schließt sie wieder."] = "More pages open to the right of the overview. Click Overview to close them again.",
     ["Sprache, Optionen und Einstellungen findest du unten. Viel Spaß beim Farmen!"] = "Language, options and settings are at the bottom. Happy farming!",

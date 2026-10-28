@@ -36,10 +36,10 @@ end
 local function Totals()
     local wk = WeekKey()
     local DB = GK.DB()
-    local rows, sum = {}, 0
+    local rows = {}
     local me = UnitName("player")
     rows[#rows + 1] = { who = me .. " (du)", net = MyNet() }
-    sum = rows[1].net
+    local sum = rows[1].net
     for who, p in pairs(peers) do
         if p.week == wk then
             rows[#rows + 1] = { who = who, net = p.net }

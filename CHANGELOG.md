@@ -1,5 +1,22 @@
 # GoldKompass Changelog
 
+## 0.26.0
+
+**English**
+- Records: best farm hour, best day and best week, shown on the Week tab and with /gk records. A new record is celebrated with a short golden pop-up
+- Weekly goal reached: pop-up once per week
+- Week tab: comparison with the 7 days before in percent
+- Savings goals: shift-click an item into the name field and the goal shows its icon
+- Introduction: on first open, three tips explain the sidebar (/gk tour shows them again)
+- Pages fade in smoothly
+
+**Deutsch**
+- Rekorde: beste Farm-Stunde, bester Tag und beste Woche, im Reiter Woche und mit /gk rekorde. Ein neuer Rekord wird kurz golden eingeblendet
+- Wochenziel erreicht: Einblendung einmal pro Woche
+- Reiter Woche: Vergleich mit den 7 Tagen davor in Prozent
+- Sparziele: Gegenstand per Shift-Klick ins Namensfeld, dann zeigt das Ziel sein Symbol
+- Einführung: beim ersten Öffnen erklären drei Hinweise die Seitenleiste (/gk tour zeigt sie erneut)
+- Seiten blenden weich ein
 ## 0.25.3
 
 **English**
