@@ -9,6 +9,9 @@
 - Savings goals: shift-click an item into the name field and the goal shows its icon
 - Introduction: on first open, three tips explain the sidebar (/gk tour shows them again)
 - Pages fade in smoothly
+- Group farm: the other players now receive the correct numbers (raw gold, item value, time and costs were shifted by one place before)
+- Group farm: a message when the host ends the session; "Start host" turns on sharing automatically if it was off
+- With the sidebar, the Plus and Options buttons at the top of the overview are hidden
 
 **Deutsch**
 - Rekorde: beste Farm-Stunde, bester Tag und beste Woche, im Reiter Woche und mit /gk rekorde. Ein neuer Rekord wird kurz golden eingeblendet
@@ -17,6 +20,9 @@
 - Sparziele: Gegenstand per Shift-Klick ins Namensfeld, dann zeigt das Ziel sein Symbol
 - Einführung: beim ersten Öffnen erklären drei Hinweise die Seitenleiste (/gk tour zeigt sie erneut)
 - Seiten blenden weich ein
+- Gruppen-Farm: Die anderen Spieler bekommen jetzt die richtigen Zahlen (vorher waren Rohgold, Item-Wert, Zeit und Kosten um eine Stelle verrutscht)
+- Gruppen-Farm: Meldung, wenn der Host die Session beendet; „Host starten“ schaltet das Teilen ein, falls es aus war
+- Mit Seitenleiste sind die Knöpfe Plus und Optionen oben in der Übersicht ausgeblendet
 ## 0.25.3
 
 **English**

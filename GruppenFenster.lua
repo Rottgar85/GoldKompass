@@ -41,6 +41,11 @@ local function Host()
         GK.FarmStop()
     else
         if not GK.Channel() then print(TITLE .. ": Du bist in keiner Gruppe.") return end
+        local o = GK.DB().opt
+        if not o.groupShare then
+            o.groupShare = true
+            print(TITLE .. ": Gruppen-Farm teilen war aus und ist jetzt an, damit die anderen dich sehen.")
+        end
         GK.FarmStart("Gruppenfarm von " .. UnitName("player"))
         if GK.SendFarmState then GK.SendFarmState(true) end
     end

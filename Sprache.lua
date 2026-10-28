@@ -161,6 +161,10 @@ local X = {
 
 -- Textteile (werden laengste zuerst ersetzt) ------------------------------------------------------------------
 local R = {
+    -- Gruppen-Farm
+    { " hat die Farm-Session beendet.", " ended the farm session." },
+    { " Deine laeuft weiter: /gk stop beendet sie.", " Yours keeps running: /gk stop ends it." },
+    { "Gruppen-Farm teilen war aus und ist jetzt an, damit die anderen dich sehen.", "Group farm sharing was off and is now on so the others can see you." },
     -- Rekorde und Vorwoche (Reiter Woche)
     { "Vergleich zu den 7 Tagen davor", "Compared to the 7 days before" }, { "Beste Farm-Stunde", "Best farm hour" },
     { "Bester Tag", "Best day" }, { "Beste Woche", "Best week" }, { "|cff66ff66neu|r", "|cff66ff66new|r" },

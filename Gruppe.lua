@@ -125,7 +125,9 @@ function GK.SendFarmState(force)
     local f = GK.farm
     local msg
     if f then
-        msg = string.format("F|%s|%d|%d|%d|%d", (f.name or ""):gsub("|", "/"), f.money or 0, f.value or 0, floor(GetTime() - f.start), f.costs or 0)
+        -- gsub in Klammern: sonst rutscht seine Trefferzahl als zweiter Wert in die Liste und alle Zahlen verschieben sich
+        local name = ((f.name or ""):gsub("|", "/"))
+        msg = string.format("F|%s|%d|%d|%d|%d", name, floor(f.money or 0), floor(f.value or 0), floor(GetTime() - f.start), floor(f.costs or 0))
     else
         msg = "H"
     end
@@ -159,6 +161,10 @@ local function OnAddon(prefix, msg, _, sender)
             end
         end
     elseif kind == "H" then
+        -- Host hat beendet: Bescheid geben, wer selbst noch mitfarmt, entscheidet selbst
+        if p.farming then
+            Print(who .. " hat die Farm-Session beendet." .. (GK.farm and " Deine laeuft weiter: /gk stop beendet sie." or ""))
+        end
         p.farming = false
     end
 end
