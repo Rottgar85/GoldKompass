@@ -6,6 +6,7 @@ ignore:
   - VEROEFFENTLICHEN.md
   - README.md
   - .luacheckrc
+  - media
   - "*.zip"
 
 manual-changelog:
