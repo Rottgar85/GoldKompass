@@ -35,6 +35,10 @@ World of Warcraft Retail addon (Midnight 12.x) · Author: Rottgar · CurseForge 
 - Group farming with host button and group loot
 - Guild weekly goal
 
+**Records**
+- Best farm hour, best day and best week with a golden pop-up for every new record
+- Comparison with the previous week, pop-up when the weekly goal is reached
+
 **Usability**
 - One window with sidebar: the overview stays open, other pages open next to it
 - Adjustable size, lockable position, optional hide in combat, window positions are remembered
@@ -57,6 +61,15 @@ German command names keep working in both languages.
 
 ### Optional
 Auctionator or TradeSkillMaster (prices), Routes (farm routes), Titan Panel/ElvUI/Bazooka (bar display)
+
+### FAQ
+**No item value is shown.** Install Auctionator or TradeSkillMaster and open the auction house once so prices are scanned. Without them GoldKompass uses the vendor price.
+
+**The window is gone.** Type `/gk`. If it is off screen, type `/gk scale 1` and drag it back by the sidebar.
+
+**Where are my separate windows?** All pages open to the right of the overview. Turn off "One window" in the settings (`/gk settings`) for separate windows.
+
+**Something is wrong.** Run `/gk selftest` and send the result together with the Lua error.
 
 ### Installation
 Copy the `GoldKompass` folder to `World of Warcraft/_retail_/Interface/AddOns`, or install it with the CurseForge app.
@@ -92,6 +105,10 @@ Copy the `GoldKompass` folder to `World of Warcraft/_retail_/Interface/AddOns`, 
 - Gruppen-Farm mit Host-Knopf und Gruppen-Beute
 - Gilden-Wochenziel
 
+**Rekorde**
+- Beste Farm-Stunde, bester Tag und beste Woche mit goldener Einblendung bei jedem neuen Rekord
+- Vergleich mit der Vorwoche, Einblendung bei erreichtem Wochenziel
+
 **Bedienung**
 - Ein Fenster mit Seitenleiste: die Übersicht bleibt offen, andere Seiten öffnen sich daneben
 - Größe einstellbar, Position sperrbar, im Kampf ausblendbar, Fensterpositionen werden gemerkt
@@ -114,6 +131,15 @@ Die englischen Befehlsnamen funktionieren in beiden Sprachen.
 
 ### Optional
 Auctionator oder TradeSkillMaster (Preise), Routes (Farm-Routen), Titan Panel/ElvUI/Bazooka (Leisten-Anzeige)
+
+### Häufige Fragen
+**Es wird kein Item-Wert angezeigt.** Auctionator oder TradeSkillMaster installieren und einmal das Auktionshaus öffnen, damit Preise gescannt werden. Ohne sie nimmt GoldKompass den Händlerpreis.
+
+**Das Fenster ist weg.** `/gk` eingeben. Liegt es außerhalb des Bildschirms, `/gk groesse 1` eingeben und es an der Seitenleiste zurückziehen.
+
+**Wo sind meine getrennten Fenster?** Alle Seiten öffnen sich rechts neben der Übersicht. Für getrennte Fenster in den Einstellungen (`/gk einstellungen`) „Ein Fenster“ ausschalten.
+
+**Etwas funktioniert nicht.** `/gk selbsttest` ausführen und das Ergebnis zusammen mit der Lua-Fehlermeldung schicken.
 
 ### Installation
 Den Ordner `GoldKompass` nach `World of Warcraft/_retail_/Interface/AddOns` kopieren oder über die CurseForge-App installieren.
