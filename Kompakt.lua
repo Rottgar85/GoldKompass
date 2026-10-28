@@ -56,6 +56,7 @@ function GK.Build()
     close:SetSize(24, 24); close:SetPoint("TOPRIGHT", 0, 0)
     local ob = Btn(f, "Optionen", 66); ob:SetHeight(18); ob:SetPoint("TOPRIGHT", -28, -5)
     ob:SetScript("OnClick", function() GK.ToggleOptions() end)
+    f.optBtn = ob
 
     f.tabs = {}
     local tw = (W - 20) / #TABS

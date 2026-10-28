@@ -255,6 +255,16 @@ local function Attach(key)
         if On() then StopMove() else self:StopMovingOrSizing(); SavePos(self, "page_" .. key) end
     end)
     if GK.ApplyScale then GK.ApplyScale() end
+    -- Knoepfe Plus und Optionen oben in der Uebersicht: im Ein-Fenster-Modus erledigt das die Seitenleiste
+    if key == "main" and not f.gkTopHook then
+        f.gkTopHook = true
+        local function TopButtons()
+            if f.plusBtn then f.plusBtn:SetShown(not On()) end
+            if f.optBtn then f.optBtn:SetShown(not On()) end
+        end
+        f:HookScript("OnShow", TopButtons)
+        TopButtons()
+    end
     if f:IsShown() then
         if On() then Shown(key) else RestorePos(f, "page_" .. key) end
     end
