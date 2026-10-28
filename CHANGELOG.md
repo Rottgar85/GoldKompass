@@ -1,5 +1,13 @@
 # GoldKompass Changelog
 
+## 0.27.1
+
+**English**
+- Fixed two Lua errors at login (C_Timer in Woche.lua and Steuerung.lua); the weekly bar updates itself again
+
+**Deutsch**
+- Zwei Lua-Fehler beim Einloggen behoben (C_Timer in Woche.lua und Steuerung.lua); die Wochenleiste aktualisiert sich wieder selbst
+
 ## 0.27.0
 
 **English**
