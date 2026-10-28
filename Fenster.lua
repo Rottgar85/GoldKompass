@@ -128,13 +128,6 @@ local closeBtn = SmallBtn("Schließen", function() nav:Hide() end)
 closeBtn:SetPoint("BOTTOM", 0, 8)
 local setBtn = SmallBtn("Einstellungen", function() if GK.OpenSettings then GK.OpenSettings() end end)
 setBtn:SetPoint("BOTTOM", closeBtn, "TOP", 0, 4)
-local optBtn = SmallBtn("Optionen", function()
-    if not (GK.frame and GK.frame:IsShown()) then GK.OpenPage("main") end
-    -- Optionen erscheinen rechts an der Uebersicht, am selben Platz wie die anderen Seiten
-    if On() then HideSidePages(); current = "main"; Paint() end
-    GK.ToggleOptions()
-end)
-optBtn:SetPoint("BOTTOM", setBtn, "TOP", 0, 4)
 
 -- Sprache wechseln: Automatisch -> Deutsch -> English -> Automatisch
 local LANG_NEXT = { auto = "de", de = "en", en = "auto" }
@@ -143,7 +136,7 @@ local langBtn = SmallBtn("", function()
     local cur = GK.GetLanguageSetting and GK.GetLanguageSetting() or "auto"
     if GK.SetLanguage then GK.SetLanguage(LANG_NEXT[cur] or "auto") end
 end)
-langBtn:SetPoint("BOTTOM", optBtn, "TOP", 0, 4)
+langBtn:SetPoint("BOTTOM", setBtn, "TOP", 0, 4)
 local function RefreshLangBtn()
     local cur = GK.GetLanguageSetting and GK.GetLanguageSetting() or "auto"
     local text = LANG_LABEL[cur] or LANG_LABEL.auto
