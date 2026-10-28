@@ -1,9 +1,9 @@
-## Interface: 120105
+## Interface: 120105, 50504, 20506, 11509, 16001
 ## Title: |cffffd100GoldKompass|r
 ## Notes: Goldverlauf, Farm-Rechner, Wochenziel, Preisalarm, Gruppen-Farm, Gilden-Wochenziel, Routes-Anbindung, eigene Routen, Gebiete-Vergleich, Schnäppchen-Alarm, Inventar, Verkaufshelfer und Wochenbericht in einem kompakten Fenster. Deutsch und Englisch.
 ## Notes-enUS: Gold tracking, farm calculator, weekly goal, price alarm, group farming, guild weekly goal, Routes support, own routes, area comparison, bargain alarm, inventory, sell helper and weekly report. German and English.
 ## Author: Rottgar
-## Version: 0.27.1
+## Version: 0.28.0
 ## X-Curse-Project-ID: 1768724
 ## IconTexture: Interface\AddOns\GoldKompass\Media\Logo
 ## AddonCompartmentFunc: GoldKompass_OnAddonCompartmentClick

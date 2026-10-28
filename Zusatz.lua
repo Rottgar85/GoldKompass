@@ -42,7 +42,7 @@ end
 
 -- 3. Erinnerungen: Post und Auktionshaus ---------------------------------------------------
 local aev = CreateFrame("Frame")
-aev:RegisterEvent("OWNED_AUCTIONS_UPDATED")
+pcall(aev.RegisterEvent, aev, "OWNED_AUCTIONS_UPDATED") -- gibt es nicht in jeder Spielversion
 aev:SetScript("OnEvent", function()
     pcall(function()
         local DB = GK.DB()

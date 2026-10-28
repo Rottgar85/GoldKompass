@@ -1,5 +1,15 @@
 # GoldKompass Changelog
 
+## 0.28.0
+
+**English**
+- Now also for Classic: Mists of Pandaria Classic, Burning Crusade Anniversary, Classic Era and WoW Forever
+- Features that only exist in Retail (warband bank, new auction house list) are skipped automatically in Classic
+
+**Deutsch**
+- Jetzt auch für Classic: Mists of Pandaria Classic, Burning Crusade Anniversary, Classic Era und WoW Forever
+- Funktionen, die es nur in Retail gibt (Kriegsmeute-Bank, neue Auktionshaus-Liste), werden in Classic automatisch übersprungen
+
 ## 0.27.1
 
 **English**
