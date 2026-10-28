@@ -379,6 +379,10 @@ function GK.BuildPlus()
         GK.RefreshPlus()
     end)
     f.bits.ziele = { gl, gName, gl2, gAmt, gSave, gDel }
+    -- Shift-Klick auf einen Gegenstand fuegt ihn als Zielnamen ein
+    hooksecurefunc("HandleModifiedItemClick", function(link)
+        if link and IsModifiedClick("CHATLINK") and gName:HasFocus() then gName:SetText(link) end
+    end)
 
     -- Material: Item einfügen oder Shift-Klick
     local mEdit = Edit(f, 190); mEdit:SetPoint("TOPLEFT", 16, -55)
@@ -518,7 +522,14 @@ local function TabGoals(L)
     for _, g in ipairs(goals) do
         local target = g.gold * 10000
         local pct = target > 0 and cur / target or 0
-        add(L, g.name .. "  (" .. G(target) .. ")", floor(math.max(pct, 0) * 100) .. "%", pct, pct >= 1 and C_GREEN or C_GOLD)
+        -- Ziel als Gegenstand (Shift-Klick ins Namensfeld): Symbol davor
+        local icon = ""
+        local id = tonumber(g.name:match("|Hitem:(%d+)"))
+        if id then
+            local tex = (C_Item and C_Item.GetItemIconByID and C_Item.GetItemIconByID(id)) or (GetItemIcon and GetItemIcon(id))
+            if tex then icon = "|T" .. tex .. ":16:16:0:0:64:64:5:59:5:59|t " end
+        end
+        add(L, icon .. g.name .. "  (" .. G(target) .. ")", floor(math.max(pct, 0) * 100) .. "%", pct, pct >= 1 and C_GREEN or C_GOLD)
         local miss = target - cur
         local eta
         if miss <= 0 then eta = "|cff66ff66Ziel erreicht!|r"

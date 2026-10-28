@@ -146,10 +146,24 @@ local X = {
     ["Hauptfenster füllen"] = "Fill main window",
     ["Hauptfenster füllen: nur prüfbar, wenn die Übersicht offen ist (/gk, dann /gk selbsttest)"] = "Fill main window: only testable while the overview is open (/gk, then /gk selftest)",
     ["Anzeige in Titan Panel/ElvUI/Bazooka (LibDataBroker)"] = "Display in Titan Panel/ElvUI/Bazooka (LibDataBroker)",
+    -- Rekorde, Einblendungen, Einfuehrung (Rekorde.lua)
+    ["Neuer Rekord: bester Tag!"] = "New record: best day!", ["Neuer Rekord: beste Woche!"] = "New record: best week!",
+    ["Neuer Rekord: beste Farm-Stunde!"] = "New record: best farm hour!", ["Wochenziel erreicht!"] = "Weekly goal reached!",
+    ["Deine Rekorde"] = "Your records", ["Beste Farm-Stunde"] = "Best farm hour", ["Bester Tag"] = "Best day",
+    ["Beste Woche"] = "Best week", ["Überspringen"] = "Skip", ["Weiter"] = "Next", ["Fertig"] = "Done",
+    ["Hier ist deine Übersicht: Gold heute, Gold pro Stunde und Wochenziel."] = "This is your overview: gold today, gold per hour and weekly goal.",
+    ["Weitere Seiten öffnen sich rechts neben der Übersicht. Ein Klick auf Übersicht schließt sie wieder."] = "More pages open to the right of the overview. Click Overview to close them again.",
+    ["Sprache, Optionen und Einstellungen findest du unten. Viel Spaß beim Farmen!"] = "Language, options and settings are at the bottom. Happy farming!",
+    ["Einführung erneut zeigen"] = "Show the introduction again",
+    ["Rekorde: beste Stunde, bester Tag, beste Woche"] = "Records: best hour, best day, best week",
+    ["Vergleich zu den 7 Tagen davor"] = "Compared to the 7 days before",
 }
 
 -- Textteile (werden laengste zuerst ersetzt) ------------------------------------------------------------------
 local R = {
+    -- Rekorde und Vorwoche (Reiter Woche)
+    { "Vergleich zu den 7 Tagen davor", "Compared to the 7 days before" }, { "Beste Farm-Stunde", "Best farm hour" },
+    { "Bester Tag", "Best day" }, { "Beste Woche", "Best week" }, { "|cff66ff66neu|r", "|cff66ff66new|r" },
     -- Kompakt-Fenster
     { "Aufzeichnung ist aus (Optionen).", "Recording is off (Options)." },
     { "Aufzeichnung ist aus (/gk optionen).", "Recording is off (/gk optionen)." },
@@ -618,7 +632,7 @@ local EN_NAME = {
     ziele = "goals", sparen = "goals", mats = "materials", material = "materials", preise = "prices",
     rueckblick = "recap", ["rückblick"] = "recap", sprache = "language", sprachcheck = "langcheck", leiste = "bar",
     dauer = "duration", verkauf = "sell", verkaufshelfer = "sell", kosten = "cost", ziel = "goal", tag = "day",
-    charstd = "charhour", stopp = "stop", fenster = "window",
+    charstd = "charhour", stopp = "stop", fenster = "window", rekorde = "records",
 }
 for de, en in pairs(EN_NAME) do
     if de ~= "fenster" and ALIAS[en] == nil then ALIAS[en] = de end

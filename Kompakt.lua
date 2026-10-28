@@ -204,6 +204,30 @@ local function TabWoche(L, DB, f)
     end
     for _, v in ipairs(days) do add(L, v[1], G(v[2]), math.abs(v[2]) / mx, v[2] >= 0 and C_GREEN or C_RED) end
     add(L, "Summe 7 Tage: ein " .. G(si) .. "  aus " .. G(so), G(si - so))
+    -- Vergleich mit den 7 Tagen davor
+    local prev = 0
+    for i = 7, 13 do
+        local d = DB.days[date("%Y-%m-%d", time() - i * 86400)]
+        if d then prev = prev + d.inn - d.out end
+    end
+    local cur = si - so
+    local trend
+    if prev > 0 then
+        local pct = floor((cur - prev) / prev * 100 + 0.5)
+        trend = (pct >= 0 and "|cff66ff66+" or "|cffff5959") .. pct .. " %|r"
+    else
+        trend = cur > 0 and "|cff66ff66neu|r" or "-"
+    end
+    add(L, "Vergleich zu den 7 Tagen davor (" .. G(prev) .. ")", trend)
+    -- Rekorde (Rekorde.lua)
+    local r = DB.records
+    if r then
+        add(L, " ", "")
+        hd(L, "Deine Rekorde")
+        if r.hour then add(L, "Beste Farm-Stunde" .. (r.hourName and ("  (" .. r.hourName .. ")") or ""), G(r.hour)) end
+        if r.day then add(L, "Bester Tag  (" .. (r.dayDate or "") .. ")", G(r.day)) end
+        if r.week then add(L, "Beste Woche  (" .. (r.weekDate or "") .. ")", G(r.week)) end
+    end
     -- Auktionshaus-Verkaeufe seit Montag (aus den Verkaufsbriefen, siehe GoldKompass.lua)
     local ws, sales = date("%Y-%m-%d", time() - ((date("*t").wday + 5) % 7) * 86400), 0
     for day, dd in pairs(DB.days) do

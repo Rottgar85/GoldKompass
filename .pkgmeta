@@ -5,6 +5,7 @@ ignore:
   - .github
   - VEROEFFENTLICHEN.md
   - README.md
+  - .luacheckrc
   - "*.zip"
 
 manual-changelog:
