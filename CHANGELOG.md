@@ -1,5 +1,13 @@
 # GoldKompass Changelog
 
+## 0.28.1
+
+**English**
+- Fixed a Lua error when hovering action bar buttons (protected tooltip texts in Midnight are now left alone)
+
+**Deutsch**
+- Lua-Fehler beim Drüberfahren über Aktionsleisten-Knöpfe behoben (geschützte Tooltip-Texte in Midnight werden jetzt nicht mehr angefasst)
+
 ## 0.28.0
 
 **English**
