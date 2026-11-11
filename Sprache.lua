@@ -592,6 +592,8 @@ local function Tip(tt)
         for _, side in ipairs({ "Left", "Right" }) do
             local fs = _G["GameTooltipText" .. side .. i]
             local t = fs and fs:GetText()
+            -- Midnight: geschuetzte ("geheime") Tooltip-Texte, etwa von Aktionsleisten, nicht anfassen
+            if issecretvalue and issecretvalue(t) then return end
             if t and t ~= "" then
                 if t:find("GoldKompass", 1, true) then on = true end
                 if on then
